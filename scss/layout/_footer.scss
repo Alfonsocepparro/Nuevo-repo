@@ -1,0 +1,25 @@
+
+footer{
+    background-color: #D83636;
+    color: black;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    div{
+        align-self: center;
+        font-size: 1.5rem;
+    }
+    .cards-logos{
+        display: flex;
+        h3{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            align-self: center;
+        }
+        a{
+            margin: .4rem;
+        }
+    }
+}
