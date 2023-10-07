@@ -14,46 +14,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="grid-container">
     <header>
         <div>
             <a href="../index.html"><img src="../assets/logos/logo-lengua.jpg" alt=""></a>
         </div>
-        <nav class="navbar">
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">inicio</a>
-                </li>
-                <li>
-                    <a href="miembros.html">miembros</a>
-                </li>
-                <li>
-                    <a href="#">discografia</a>
-                </li>
-                <li>
-                    <a href="galeria.html">galeria</a>
-                </li>
-                <li>
-                    <a href="ingresar.html">ingresar</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-#D83636 fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Discografia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./miembros.html">Miembros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar por palabra clave" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="main-discografia">
+    <main class="main-discografia bg-black">
         <section class="card-nuevoa">
             <div>
-                <h1>Nuevo album</h1>
+                <h1 class="nuevo-album">Nuevo album</h1>
                 <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores officiis id et veritatis nihil nemo nostrum facilis porro non natus debitis, odit vero quibusdam numquam accusantium. Magnam, esse laudantium.</article>
             </div>
             <div>
-                <img src="../assets/image/hackney.jpg" alt="">
+                <img class="imagen-hackney" src="../assets/images/hackney.jpg" alt="">
             </div>
         </section>
         <h2 class="separadorDiscografia">Discografia por orden cronológico</h2>
         <section class="card-Disco">
             <h2 class="titulo-album">aftermath</h2>
             <div>
-                <img src="../assets/image/aftermath.jpg" alt="">
+                <img src="../assets/images/aftermath.jpg" alt="">
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Es un muy buen disco, con temas muy variados y el mas largo su duscografia con 11 m going home Nemo ratione quas earum animi, fuga natus quod incidunt dolorum id velit repellendus, ducimus doloremque nobis eius quos? Saepe facere in suscipit!</article>
             </div>
         </section>
@@ -61,13 +77,13 @@
             <h2 class="titulo-album">beggars banquet</h2>
             <div>
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione quas earum animi, fuga natus quod incidunt dolorum id velit repellendus, ducimus doloremque nobis eius quos? Saepe facere in suscipit!</article>
-                <img src="../assets/image/beggars.jpeg" alt="">
+                <img src="../assets/images/beggars.jpeg" alt="">
             </div>
         </section>
         <section class="card-Disco">
             <h2 class="titulo-album">let it bleed</h2>
             <div>
-                <img src="../assets/image/letitbleed.jpg" alt="">
+                <img src="../assets/images/letitbleed.jpg" alt="">
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione quas earum animi, fuga natus quod incidunt dolorum id velit repellendus, ducimus doloremque nobis eius quos? Saepe facere in suscipit!</article>
             </div>
         </section>
@@ -75,13 +91,13 @@
             <h2 class="titulo-album">sticky fingers</h2>
             <div>
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione quas earum animi, fuga natus quod incidunt dolorum id velit repellendus, ducimus doloremque nobis eius quos? Saepe facere in suscipit!</article>
-                <img src="../assets/image/sticky.jpg" alt="">
+                <img src="../assets/images/sticky.jpg" alt="">
             </div>
         </section>
         <section class="card-Disco">
             <h2 class="titulo-album">Exiles on main treet</h2>
             <div>
-                <img src="../assets/image/exiles.jpg" alt="">
+                <img src="../assets/images/exiles.jpg" alt="">
                 <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione quas earum animi, fuga natus quod incidunt dolorum id velit repellendus, ducimus doloremque nobis eius quos? Saepe facere in suscipit!</article>
             </div>
         </section>

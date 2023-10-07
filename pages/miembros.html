@@ -15,53 +15,67 @@
         <div>
             <a href="../index.html"><img src="../assets/logos/logo-lengua.jpg" alt=""></a>
         </div>
-        <nav class="navbar">
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">inicio</a>
-                </li>
-                <li>
-                    <a href="#">miembros</a>
-                </li>
-                <li>
-                    <a href="discografia.html">discografia</a>
-                </li>
-                <li>
-                    <a href="galeria.html">galeria</a>
-                </li>
-                <li>
-                    <a href="ingresar.html">ingresar</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-#D83636 fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./discografia.html">Discografia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Miembros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar por palabra clave" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
-        <h2 class="miembrosActivos">Miembros activos:</h2>
-        <section class="cards">
-            <div class="cardscard-M">
-                <img src="../assets/image/fotomick.jpg" alt="">
-                <h2>Mick</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Mick_Jagger">Leer más</a></p>
-            </div>
-            <div class="cardscard-K">
-                <img src="../assets/image/fotokeith.jpg" alt="">
-                <h2>Keith</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Keith_Richards">Leer más</a></p>
-            </div>
-            <div class="cardscard-R">
-                <img src="../assets/image/fotoronnie.jpg" alt="">
-                <h2>Ronnie</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Ronnie_Wood">Leer más</a></p>
-            </div>
-            <div class="cardscard-S">
-                <img src="../assets/image/fotosteve.jpg" alt="">
-                <h2>Steve</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Steve_Jordan">Leer más</a></p>
-            </div>
-        </section>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veniam voluptatem, beatae quos pariatur error alias. Nesciunt facilis natus inventore voluptates iusto, iste cumque ea explicabo veritatis consequatur doloribus magnam.</p>
-        </section>
+    <main class="main-miembros">
+      <h2 class="miembrosActivos">Miembros activos:</h2>
+      <section class="cards">
+        <div class="cardscard-M">
+          <img src="../assets/pictures/fotomick.jpg" alt="">
+          <h2>Mick</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Mick_Jagger">Leer más</a></p>
+        </div>
+        <div class="cardscard-K">
+          <img src="../assets/pictures/fotokeith.jpg" alt="">
+          <h2>Keith</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Keith_Richards">Leer más</a></p>
+        </div>
+        <div class="cardscard-R">
+          <img src="../assets/pictures/fotoronnie.jpg" alt="">
+          <h2>Ronnie</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Ronnie_Wood">Leer más</a></p>
+        </div>
+        <div class="cardscard-S">
+            <img src="../assets/pictures/fotosteve.jpg" alt="">
+            <h2>Steve</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicindi optio, ea molestiae necessitatibus, alias similique, ab vero adipisci eius dicta esse dolor!<a href="https://es.wikipedia.org/wiki/Steve_Jordan">Leer más</a></p>
+        </div>
+      </section>
     </main>
     <footer class="cards-footer">
         <div>
