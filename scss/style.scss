@@ -90,7 +90,7 @@ html{
         color: white;
         font-family: $font-family;
         text-decoration: underline #D83636;
-        margin: 2rem 2rem 0rem 2rem;
+        padding: 2rem 2rem 0rem 2rem;
         font-size: 2rem;
         }
     }
@@ -100,6 +100,7 @@ html{
                 margin: 2rem;
                 text-indent: 1rem;
                 border: none;
+                margin-bottom: 0px;
             }
             label{
                 color: white;
