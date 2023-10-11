@@ -1,8 +1,4 @@
 /*primero llamo a import con las variables y todas las utilities*/
-button {
-  border: solid black 2px;
-}
-
 html {
   background-color: black;
 }
@@ -52,104 +48,114 @@ header .navbar-nav ul li a {
   color: black;
 }
 
-footer {
-  background-color: #D83636;
-  color: black;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  grid-area: footer;
+.grid-container-miembros {
+  background-color: black;
 }
-footer div {
-  align-self: center;
-  font-size: 1.5rem;
-  flex-wrap: wrap;
+.grid-container-miembros .main-miembros {
+  height: 1.5 vh;
+  grid-area: main;
+  margin-bottom: 40px;
 }
-footer .divLogos {
-  display: flex;
-  flex-direction: row;
-}
-footer .divLogos h3 {
-  font-family: "Bebas Neue", sans-serif;
+.grid-container-miembros .main-miembros .miembrosActivos {
+  color: #D83636;
+  background-color: black;
+  text-align: left;
   font-size: 2rem;
-  align-self: center;
-}
-footer .divLogos a {
-  margin-right: 0.4rem;
-  gap: 0.25rem;
-}
-
-.cards-footer {
-  margin-top: 0px;
-}
-
-.main-discografia {
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.main-discografia section {
-  border-top: dotted darkslategray;
-  border-bottom: dotted darkslategray;
-}
-.main-discografia section .titulo-album {
+  text-decoration: underline none;
   font-family: "Bebas Neue", sans-serif;
-  text-decoration: underline double darkslategray;
-  font-size: 1.7rem;
-  text-transform: capitalize;
-  text-indent: 15px;
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-.main-discografia section div .nuevo-album {
-  font-family: "Bebas Neue", sans-serif;
-  text-decoration: underline solid darkslategrey;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-.main-discografia section div img {
-  width: 300px;
-  margin: 5px 10px 5px 10px;
-}
-.main-discografia section div .imagen-hackney {
-  border-radius: 50%;
-}
-.main-discografia section div main section div article {
-  padding: 10px;
-  font-size: 1.4rem;
-  font-family: "Archivo", sans-serif;
-}
-.main-discografia section .separadorDiscografia {
-  background-color: darkslategray;
-  padding: 7px;
-  text-align: center;
-  margin-top: 9px;
-  font-family: "Archivo", sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.3rem;
-  width: 100%;
-}
-
-.mainIndex {
-  display: flex;
-  flex-direction: column;
-}
-.mainIndex .tituloRolling {
-  margin-top: 0.875rem;
-  width: 100%;
-  height: 210px;
-  align-self: center;
-}
-.mainIndex .parrafitoIndex {
-  color: white;
+  text-indent: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.625rem;
+  border-bottom: dotted 0.125rem #D83636;
+  border-top: dotted 0.125rem #D83636;
   padding: 0.5rem;
-  font-size: 1.5rem;
-  word-spacing: 1.5px;
-  letter-spacing: 1px;
-  margin-bottom: 0;
+}
+.grid-container-miembros .main-miembros .cards {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  flex-wrap: wrap;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas: "card-M" "card-K" "card-R" "card-S";
+}
+.grid-container-miembros .main-miembros .cards .card-M, .grid-container-miembros .main-miembros .cards .card-S, .grid-container-miembros .main-miembros .cards .card-R, .grid-container-miembros .main-miembros .cards .card-K {
+  width: 20rem;
+  height: 25rem;
+  margin: 0.4375rem;
+  border: 0.1875rem solid #D83636;
+  border-radius: 10%;
+  overflow: hidden;
+  background-color: lightblue;
+  grid-area: card-M;
+}
+.grid-container-miembros .main-miembros .cards .card-M img, .grid-container-miembros .main-miembros .cards .card-S img, .grid-container-miembros .main-miembros .cards .card-R img, .grid-container-miembros .main-miembros .cards .card-K img {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+}
+.grid-container-miembros .main-miembros .cards .card-M h2, .grid-container-miembros .main-miembros .cards .card-S h2, .grid-container-miembros .main-miembros .cards .card-R h2, .grid-container-miembros .main-miembros .cards .card-K h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.625rem;
+}
+.grid-container-miembros .main-miembros .cards .card-M p, .grid-container-miembros .main-miembros .cards .card-S p, .grid-container-miembros .main-miembros .cards .card-R p, .grid-container-miembros .main-miembros .cards .card-K p {
+  padding: 0.625rem;
+}
+.grid-container-miembros .main-miembros .cards .card-M p a, .grid-container-miembros .main-miembros .cards .card-S p a, .grid-container-miembros .main-miembros .cards .card-R p a, .grid-container-miembros .main-miembros .cards .card-K p a {
+  padding-left: 0.625rem;
+}
+.grid-container-miembros .main-miembros .cards .card-K {
+  background-color: lightcoral;
+  grid-area: card-K;
+}
+.grid-container-miembros .main-miembros .cards .card-R {
+  background-color: lightgreen;
+  grid-area: card-R;
+}
+.grid-container-miembros .main-miembros .cards .card-S {
+  background-color: lightpink;
+  grid-area: card-S;
+}
+
+.footer-miembros {
+  grid-area: footer-miembros;
+  margin-top: 1000px;
+}
+
+.main-ingresar {
+  background-color: black;
+}
+.main-ingresar div h1 {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: underline #D83636;
+  padding: 2rem 2rem 0rem 2rem;
+  font-size: 2rem;
+}
+.main-ingresar section form .formulario {
+  margin: 2rem;
+  text-indent: 1rem;
+  border: none;
+  margin-bottom: 0px;
+}
+.main-ingresar section form label {
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+  display: flex;
+  text-decoration: underline #D83636;
+}
+.main-ingresar section form input {
+  width: 95%;
+  height: 3rem;
+  margin: 0.5rem 1rem 1rem 1rem;
 }
 
 .main-discografia {
@@ -200,37 +206,114 @@ footer .divLogos a {
   width: 100%;
 }
 
-.main-ingresar {
-  background-color: black;
-}
-.main-ingresar div h1 {
-  color: white;
-  font-family: "Bebas Neue", sans-serif;
-  text-decoration: underline #D83636;
-  padding: 2rem 2rem 0rem 2rem;
-  font-size: 2rem;
-}
-.main-ingresar section form .formulario {
-  margin: 2rem;
-  text-indent: 1rem;
-  border: none;
-  margin-bottom: 0px;
-}
-.main-ingresar section form label {
-  color: white;
-  font-size: 2rem;
-  text-transform: capitalize;
+.mainIndex {
   display: flex;
-  text-decoration: underline #D83636;
+  flex-direction: column;
 }
-.main-ingresar section form input {
-  width: 95%;
-  height: 3rem;
-  margin: 0.5rem 1rem 1rem 1rem;
+.mainIndex .tituloRolling {
+  margin-top: 0.875rem;
+  width: 100%;
+  height: 210px;
+  align-self: center;
+}
+.mainIndex .parrafitoIndex {
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+footer, .footer-index {
+  background-color: #D83636;
+  color: black;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  grid-area: footer;
+}
+footer div, .footer-index div {
+  align-self: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+footer .divLogos, .footer-index .divLogos {
+  display: flex;
+  flex-direction: row;
+}
+footer .divLogos h3, .footer-index .divLogos h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  align-self: center;
+}
+footer .divLogos a, .footer-index .divLogos a {
+  margin-right: 0.4rem;
+  gap: 0.25rem;
+}
+
+.footer-index {
+  margin: 0px;
+}
+
+.footer-miembros {
+  grid-area: footer-miembros;
+  margin-top: 1500px;
+}
+
+.main-discografia {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.main-discografia section {
+  border-top: dotted darkslategray;
+  border-bottom: dotted darkslategray;
+}
+.main-discografia section .titulo-album {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: underline double darkslategray;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  text-indent: 15px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.main-discografia section div .nuevo-album {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: underline solid darkslategrey;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.main-discografia section div img {
+  width: 300px;
+  margin: 5px 10px 5px 10px;
+}
+.main-discografia section div .imagen-hackney {
+  border-radius: 50%;
+}
+.main-discografia section div main section div article {
+  padding: 10px;
+  font-size: 1.4rem;
+  font-family: "Archivo", sans-serif;
+}
+.main-discografia section .separadorDiscografia {
+  background-color: darkslategray;
+  padding: 7px;
+  text-align: center;
+  margin-top: 9px;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  width: 100%;
 }
 
 @media (min-width: 425px) {
-  footer {
+  footer, .footer-index {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -244,8 +327,51 @@ footer .divLogos a {
   main section div img {
     margin-left: 70px;
   }
-  .main.main-ingresar div h1 {
+  .main-ingresar div h1 {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .main-index {
+    display: flex;
+    flex-direction: row;
+  }
+  .tituloRolling {
+    width: 600px;
+    height: 194px;
+    margin: 0.875rem 0px 0px 0px;
+    align-self: center;
+  }
+  .imagen-hackney {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .card-Disco .titulo-album {
+    font-size: 2rem;
+  }
+  .card-Disco div article {
+    font-size: 1.7rem;
+  }
+  .separadorDiscografia {
+    font-size: 2rem;
+  }
+  .main-ingresar div h1 {
+    font-size: 3.5rem;
+  }
+  footer div p, .footer-index div p {
+    font-size: 1.5rem;
+  }
+  .cards {
+    justify-items: space-between;
+    display: grid;
+    gap: 50px;
+    flex-direction: row;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "card-M card-K" "card-R card-S";
+  }
+  .footer-miembros {
+    margin-top: 1400px;
   }
 }
 

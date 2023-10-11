@@ -6,6 +6,7 @@ footer{
     padding-top: .5rem;
     display: flex; flex-direction: row;
     justify-content: space-between;
+    margin: 0px;
     grid-area: footer;
     div{
         align-self: center;
@@ -25,8 +26,11 @@ footer{
         }
     }
 }
-
-.cards-footer{
-    margin-top: 0px;
+.footer-index{
+    @extend footer;
+    margin: 0px;
 }
-
+.footer-miembros{
+    grid-area: footer-miembros;
+    margin-top: 1500px;
+}

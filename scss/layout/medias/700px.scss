@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px){
+    .main-index{
+        @include flex
+    }
+    .tituloRolling{
+        width: 600px;
+        height: 194px;
+        margin: .875rem 0px 0px 0px;
+        align-self: center;
+    }
+    
+    .imagen-hackney{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .card-Disco{
+        .titulo-album{
+            font-size: 2rem;
+        }
+        div{
+            article{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .separadorDiscografia{
+        font-size: 2rem;
+        }
+    .main-ingresar{
+        div{
+            h1{
+            font-size: 3.5rem;
+            }
+        }
+    }
+    footer div p{
+        font-size: 1.5rem;
+    }
+    .cards{
+        justify-items: space-between;
+        display: grid;
+        gap: 50px;
+        flex-direction: row;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "card-M card-K"
+        "card-R card-S";
+    }
+    .footer-miembros{
+        margin-top: 1400px;
+    }
+}

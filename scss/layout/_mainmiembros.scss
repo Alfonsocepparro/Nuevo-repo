@@ -1,0 +1,87 @@
+
+.grid-container-miembros{
+    background-color: $background;
+    .main-miembros{
+        height: 1.5 vh;
+        grid-area: main;
+        margin-bottom: 40px;
+        .miembrosActivos{
+            color: #D83636;
+            background-color: black;
+            text-align: left;
+            font-size: 2rem;
+            text-decoration: underline none;
+            font-family: $font-family;
+            text-indent: 2rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: .625rem;
+            border-bottom: dotted .125rem #D83636;
+            border-top: dotted .125rem #D83636;
+            padding: .5rem;
+        }
+        .cards{
+            width: 100%;
+            height: 480px;
+            margin-bottom: 200px;
+            display: flex; flex-direction: column;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr;
+            grid-template-areas: 
+            "card-M"
+            "card-K"
+            "card-R"
+            "card-S";
+            
+            .card-M{
+                width: 20rem;
+                height: 25rem;
+                margin: .4375rem;
+                border: .1875rem solid #D83636;
+                border-radius: 10%;
+                overflow: hidden;
+                background-color: lightblue;
+                grid-area: card-M;
+                img{
+                    width: 100%;
+                    height: 70%;
+                    margin: 0;
+                }
+                h2{
+                    text-align: center;
+                    font-family: $font-family;
+                    letter-spacing: .625rem;
+                }
+                p{
+                    padding: .625rem;
+                    a{
+                        padding-left: .625rem;
+                    }
+                }
+            }
+            .card-K{
+                @extend .card-M;
+                background-color: lightcoral;
+                grid-area: card-K;
+            }
+            .card-R{
+                @extend .card-M;
+                background-color: lightgreen;
+                grid-area: card-R;
+            }
+            .card-S{
+                @extend .card-M;
+                background-color: lightpink;
+                grid-area: card-S;
+            }
+        }
+    }
+}
+.footer-miembros{
+    grid-area: footer-miembros;
+    margin-top: 1000px;
+}

@@ -1,4 +1,9 @@
-button{
-    border: solid black 2px;
-    
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin borde{
+    border-top: dotted darkslategray;
+    border-bottom: dotted darkslategray;
 }

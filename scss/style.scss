@@ -9,116 +9,19 @@ html{
 @import "./base/reset";
 @import "./components/botones";
 @import "./layout/header";
+
+
+@import "./layout/mainmiembros";
+@import "./layout/mainingresar";
+@import "./layout/maindisco";
+@import "./layout/mainindex";
+
 @import "./layout/footer";
 @import "./components/cards";
 
-.mainIndex{
-        display: flex; flex-direction: column;
-    .tituloRolling{
-        margin-top: .875rem;
-        width: 100%;
-        height: 210px;
-        align-self: center;
-    }
-    .parrafitoIndex{
-        color: white;
-        padding: .5rem;
-        font-size: 1.5rem;
-        word-spacing: 1.5px;
-        letter-spacing: 1px;
-        margin-bottom: 0;
-    }
-}
-.main-discografia{
-    color: white;
-    display: flex; flex-direction: column;
-    .card-nuevoa{
-        div{
-        .nuevo-album{
-            font-family: $font-family;
-            text-decoration: underline solid darkslategrey;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 2rem
-            }
-            .imagen-hackney{
-                border-radius: 50%;
-            }
-        }
-    }
-    .card-Disco{
-        border-top: dotted darkslategray;
-        border-bottom: dotted darkslategray;
-        .titulo-album{
-            font-family: $font-family;
-            text-decoration: underline double darkslategray;
-            font-size: 1.7rem;
-            text-transform: capitalize;
-            text-indent: 15px;
-            margin-top: 9px;
-            margin-bottom: 9px;
-        }
-        div{
-            img{
-                width: 300px;
-                margin: 5px 10px 5px 10px;
-            }
-            article{
-                padding: 10px;
-                font-size: 1.4rem;
-                font-family: 'Archivo', sans-serif;
-            }
-        }
-    }
-    .separadorDiscografia{
-        background-color: darkslategray;
-        padding: 7px;
-        text-align: center;
-        margin-top: 9px;
-        font-family: 'Archivo', sans-serif;
-        letter-spacing: 2px;
-        font-size: 1.3rem;
-        width: 100%;
-    }
-}
 
 
-.main-ingresar{
-    background-color: $background;
-    div{
-        h1{
-        color: white;
-        font-family: $font-family;
-        text-decoration: underline #D83636;
-        padding: 2rem 2rem 0rem 2rem;
-        font-size: 2rem;
-        }
-    }
-    section{
-        form{
-            .formulario{
-                margin: 2rem;
-                text-indent: 1rem;
-                border: none;
-                margin-bottom: 0px;
-            }
-            label{
-                color: white;
-                font-size: 2rem;
-                text-transform: capitalize;
-                display: flex;
-                text-decoration: underline #D83636;
-            }
-            input{
-                width: 95%;
-                height: 3rem;
-                margin: 0.5rem 1rem 1rem 1rem;
-            }
-        }
-    }
-}
-
-@import "./layout/medias/320px.scss"
-
+@import "./layout/medias/320px.scss";
+@import "./layout/medias/700px.scss";
 
 
