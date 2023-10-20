@@ -53,8 +53,6 @@ header .navbar-nav ul li a {
 }
 .grid-container-miembros .main-miembros {
   height: 1.5 vh;
-  grid-area: main;
-  margin-bottom: 40px;
 }
 .grid-container-miembros .main-miembros .miembrosActivos {
   color: #D83636;
@@ -73,27 +71,25 @@ header .navbar-nav ul li a {
 }
 .grid-container-miembros .main-miembros .cards {
   width: 100%;
-  height: 480px;
+  height: 2300px;
   margin-bottom: 200px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: black;
   flex-wrap: wrap;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4fr;
-  grid-template-areas: "card-M" "card-K" "card-R" "card-S";
 }
 .grid-container-miembros .main-miembros .cards .card-M, .grid-container-miembros .main-miembros .cards .card-S, .grid-container-miembros .main-miembros .cards .card-R, .grid-container-miembros .main-miembros .cards .card-K {
-  width: 20rem;
-  height: 25rem;
+  width: 320px;
+  height: 600px;
   margin: 0.4375rem;
+  margin-left: 0px;
+  margin-right: 0px;
   border: 0.1875rem solid #D83636;
   border-radius: 10%;
   overflow: hidden;
+  justify-self: center;
   background-color: lightblue;
-  grid-area: card-M;
 }
 .grid-container-miembros .main-miembros .cards .card-M img, .grid-container-miembros .main-miembros .cards .card-S img, .grid-container-miembros .main-miembros .cards .card-R img, .grid-container-miembros .main-miembros .cards .card-K img {
   width: 100%;
@@ -103,30 +99,29 @@ header .navbar-nav ul li a {
 .grid-container-miembros .main-miembros .cards .card-M h2, .grid-container-miembros .main-miembros .cards .card-S h2, .grid-container-miembros .main-miembros .cards .card-R h2, .grid-container-miembros .main-miembros .cards .card-K h2 {
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
+  margin-top: 0.5rem;
   letter-spacing: 0.625rem;
 }
 .grid-container-miembros .main-miembros .cards .card-M p, .grid-container-miembros .main-miembros .cards .card-S p, .grid-container-miembros .main-miembros .cards .card-R p, .grid-container-miembros .main-miembros .cards .card-K p {
   padding: 0.625rem;
+  padding-top: 0px;
+  font-size: 1.3rem;
 }
 .grid-container-miembros .main-miembros .cards .card-M p a, .grid-container-miembros .main-miembros .cards .card-S p a, .grid-container-miembros .main-miembros .cards .card-R p a, .grid-container-miembros .main-miembros .cards .card-K p a {
   padding-left: 0.625rem;
 }
 .grid-container-miembros .main-miembros .cards .card-K {
   background-color: lightcoral;
-  grid-area: card-K;
 }
 .grid-container-miembros .main-miembros .cards .card-R {
   background-color: lightgreen;
-  grid-area: card-R;
 }
 .grid-container-miembros .main-miembros .cards .card-S {
   background-color: lightpink;
-  grid-area: card-S;
 }
 
 .footer-miembros {
-  grid-area: footer-miembros;
-  margin-top: 1000px;
+  margin-top: 100px;
 }
 
 .main-ingresar {
@@ -261,7 +256,7 @@ footer .divLogos a, .footer-index .divLogos a {
 
 .footer-miembros {
   grid-area: footer-miembros;
-  margin-top: 1500px;
+  margin-top: 100px;
 }
 
 .main-discografia {
@@ -319,7 +314,6 @@ footer .divLogos a, .footer-index .divLogos a {
     padding: 10px;
     font-size: 18px;
     gap: 8px;
-    margin-top: 150px;
   }
   header {
     width: 100%;
@@ -329,6 +323,11 @@ footer .divLogos a, .footer-index .divLogos a {
   }
   .main-ingresar div h1 {
     font-size: 2.5rem;
+  }
+  .miembrosActivos .cards .card-M, .miembrosActivos .grid-container-miembros .main-miembros .cards .card-K, .grid-container-miembros .main-miembros .miembrosActivos .cards .card-K, .miembrosActivos .grid-container-miembros .main-miembros .cards .card-R, .grid-container-miembros .main-miembros .miembrosActivos .cards .card-R, .miembrosActivos .grid-container-miembros .main-miembros .cards .card-S, .grid-container-miembros .main-miembros .miembrosActivos .cards .card-S {
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 700px) {
@@ -363,15 +362,17 @@ footer .divLogos a, .footer-index .divLogos a {
   }
   .cards {
     justify-items: space-between;
-    display: grid;
     gap: 50px;
     flex-direction: row;
-    grid-template-columns: 2fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "card-M card-K" "card-R card-S";
+  }
+  .card-M, .grid-container-miembros .main-miembros .cards .card-K, .grid-container-miembros .main-miembros .cards .card-R, .grid-container-miembros .main-miembros .cards .card-S {
+    width: 500px;
+    height: 550px;
+    flex-wrap: wrap;
+    margin: 1rem;
   }
   .footer-miembros {
-    margin-top: 1400px;
+    margin-top: 100px;
   }
 }
 

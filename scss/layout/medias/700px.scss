@@ -38,16 +38,16 @@
     }
     .cards{
         justify-items: space-between;
-        display: grid;
         gap: 50px;
         flex-direction: row;
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
-        grid-template-areas: 
-        "card-M card-K"
-        "card-R card-S";
-    }
+        }
+        .card-M{
+            width: 500px;
+            height: 550px;
+            flex-wrap: wrap;
+            margin: 1rem;
+        }
     .footer-miembros{
-        margin-top: 1400px;
+        margin-top: 100px;
     }
 }
