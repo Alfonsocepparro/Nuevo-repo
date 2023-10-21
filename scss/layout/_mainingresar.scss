@@ -17,18 +17,22 @@
                 text-indent: 1rem;
                 border: none;
                 margin-bottom: 0px;
-            }
-            label{
-                color: white;
-                font-size: 2rem;
-                text-transform: capitalize;
-                display: flex;
-                text-decoration: underline #D83636;
-            }
-            input{
-                width: 95%;
-                height: 3rem;
-                margin: 0.5rem 1rem 1rem 1rem;
+                label{
+                    color: white;
+                    font-size: 2rem;
+                    text-transform: capitalize;
+                    display: flex;
+                    text-decoration: underline #D83636;
+                }
+                input{
+                    width: 95%;
+                    height: 3rem;
+                    margin: 0.5rem 1rem 1rem 1rem;
+                }
+                .boton-ingresar{
+                    @include boton;
+                    font-size: 1.5rem;
+                }
             }
         }
     }

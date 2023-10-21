@@ -1,0 +1,17 @@
+@media (min-width: 1440px) {
+    .carousel-item img {
+      max-height: 140vh; /* El doble de la altura de la ventana */
+    }
+    header{
+        height: 150px;
+    }
+    .main-discografia{
+        section{
+            div{
+                article{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}  

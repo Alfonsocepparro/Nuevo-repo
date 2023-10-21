@@ -21,6 +21,10 @@
             article{
                 font-size: 1.7rem;
             }
+            img{
+                margin-left: 40px;
+                margin-right: 2.5rem;
+            }
         }
     }
     .separadorDiscografia{
@@ -37,14 +41,11 @@
         font-size: 1.5rem;
     }
     .cards{
-        justify-items: space-between;
+        justify-content: space-between;
         gap: 50px;
         flex-direction: row;
         }
         .card-M{
-            width: 500px;
-            height: 550px;
-            flex-wrap: wrap;
             margin: 1rem;
         }
     .footer-miembros{
