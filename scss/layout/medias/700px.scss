@@ -8,10 +8,19 @@
         margin: .875rem 0px 0px 0px;
         align-self: center;
     }
-    
-    .imagen-hackney{
-        margin-left: 30%;
-        margin-right: 30%;
+    .main-discografia{
+        .card-nuevoa{
+            div{
+                .imagen-hackney{
+                    margin-left: 30%;
+                }
+            }
+            iframe{
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
     }
     .card-Disco{
         .titulo-album{

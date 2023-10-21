@@ -1,0 +1,21 @@
+@media (min-width: 1024px){
+    .main-discografia{
+        .card-nuevoa{
+            div{
+                .imagen-hackney{
+                    margin-left: 40%;
+                }
+            }
+        }
+        .card-Disco{
+            .titulo-album{
+                font-size: 3rem;
+            }
+            div{
+                img{
+                    margin-left: 40%;
+                }
+            }
+        }
+    }
+}

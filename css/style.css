@@ -180,7 +180,12 @@ header nav div .offcanvas-body ul li a {
   text-decoration: underline solid darkslategrey;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3.3rem;
+  margin-top: 10px;
+  border: solid #D83636 3px;
+}
+.main-discografia .card-nuevoa div article {
+  padding: 10px;
 }
 .main-discografia .card-nuevoa div .imagen-hackney {
   border-radius: 50%;
@@ -359,9 +364,13 @@ footer .divLogos a, .footer-index .divLogos a {
     margin: 0.875rem 0px 0px 0px;
     align-self: center;
   }
-  .imagen-hackney {
+  .main-discografia .card-nuevoa div .imagen-hackney {
     margin-left: 30%;
-    margin-right: 30%;
+  }
+  .main-discografia .card-nuevoa iframe {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .card-Disco .titulo-album {
     font-size: 2rem;
@@ -392,6 +401,17 @@ footer .divLogos a, .footer-index .divLogos a {
   }
   .footer-miembros {
     margin-top: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-discografia .card-nuevoa div .imagen-hackney {
+    margin-left: 40%;
+  }
+  .main-discografia .card-Disco .titulo-album {
+    font-size: 3rem;
+  }
+  .main-discografia .card-Disco div img {
+    margin-left: 40%;
   }
 }
 @media (min-width: 1440px) {
