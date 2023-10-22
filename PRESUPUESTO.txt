@@ -1,0 +1,8 @@
+Presupuesto sitio web:
+
+Diseño y maquetación del sitio HTML5 y CSS3: $89000
+Diseño y maquetacion del sitio responsivo/adaptivo: $138000
+Galeria de Imagenes: $6000
+Horas de trabajo: $7000
+
+TOTAL: $240000
